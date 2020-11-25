@@ -1,4 +1,5 @@
 //Função (o nome sempre é ação+substantivo ex.: apagarLux)
+//Parâmetro é o que tem entre parênteses
 //Função sem parâmetro
 let modoSite = 'White';
 function modoNoturno(){

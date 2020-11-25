@@ -14,7 +14,7 @@
 //    if (entrada%5===0)
 //        return 'Buzz';
 //}
-//
+
 ////Teste de velocidade
 //verificaVelocidade(129);
 //function verificaVelocidade(velocidade){
@@ -30,7 +30,7 @@
 //        console.log('tudo bem');
 //    }
 //}
-//
+
 ////Par ou ímpar
 //function parImpar(n){
 //    do{
@@ -43,7 +43,7 @@
 //    }while(n>0);
 //}
 //parImpar(7);
-//
+
 ////Retornar string do objeto
 //const celular = {
 //    marca:'OnePlus',
@@ -61,7 +61,7 @@
 //    }
 //}
 //retornarString(celular);
-//
+
 ////Somar os múltiplos de 5 e 3
 //
 //function somar(limite){
@@ -111,4 +111,82 @@
 //}
 //console.log(exibeAsteristico(10));
 
-//Números primos
+//ENDERECO
+//const endereco = {
+//    rua: 'turmalina',
+//    cidade: 'Arcos',
+//    cep: 32482030,
+//};
+//
+//function exibirEndereco(endereco){
+//    for (let chave in endereco)
+//        console.log(chave,endereco[chave]);
+//};
+//
+//exibirEndereco(endereco);
+
+//COMPARAR OBJETOS E REFERÊNCIA
+//function Celular(marca,modelo,android,tela){
+//    marca,
+//    modelo,
+//    android,
+//    tela
+//};
+//const celular1 = new Celular('a','b','c','d');
+//const celular2 = new Celular('a','b','c','d');
+//
+//function saoIguais(celular1,celular2){
+//    return celular1.marca == celular2.marca &&
+//    celular1.modelo == celular2.modelo &&
+//    celular1.android == celular2.android &&
+//    celular1.tela == celular2.tela;
+//};
+//console.log(saoIguais(celular2, celular1));
+//
+//function temEnderecoMemoriaIguais(celular1,celular2){
+//    return celular1 === celular2;
+//};
+//console.log(temEnderecoMemoriaIguais(celular1,celular2));
+////Se armazenássemos um objeto em uma variável, os dois ocupariam o mesmo endereço na memória
+
+////Postagem
+//let postagem = {
+//    titulo: 'bitcoin',
+//    mensagem: 'Bitcoin é reserva de valor',
+//    autor: 'aagrbpp',
+//    views: '12',
+//    comentarios: [
+//        {autor:'fulano',mensagem:'vdd'},
+//        {autor:'ciclano', mensagem:'com certeza'},
+//    ],
+//    estaAoVivo: true,
+//};
+//console.log(postagem);
+
+//ENCAPSULAR OBJETO COM ARRAY
+//function criarPostagem(titulo, mensagem, autor) {
+//    titulo,
+//    mensagem,
+//    autor,
+//    this.views=0,
+//    this.comentarios = [],
+//    estaAoVivo = false
+//};
+//
+//let postagem1 = new criarPostagem('bitcoin','bitcoin é deflacionário', 'aagrbpp');
+//console.log(postagem1);
+
+//LIMITE DE PREÇO cria array com objetos dentro
+function criarFaixa (tooltip,min,max){
+    return{
+        tooltip,
+        min,
+        max
+    };
+};
+const faixas = [
+    criarFaixa('até 999',0,999),
+    criarFaixa('de 1000 até 1999',1000,1999),
+    criarFaixa('acima de 2000',2000,99999),
+];
+console.log(faixas);
