@@ -177,16 +177,16 @@
 //console.log(postagem1);
 
 //LIMITE DE PREÇO cria array com objetos dentro
-function criarFaixa (tooltip,min,max){
-    return{
-        tooltip,
-        min,
-        max
-    };
-};
-const faixas = [
-    criarFaixa('até 999',0,999),
-    criarFaixa('de 1000 até 1999',1000,1999),
-    criarFaixa('acima de 2000',2000,99999),
-];
-console.log(faixas);
+//function criarFaixa (tooltip,min,max){
+//    return{
+//        tooltip,
+//        min,
+//        max
+//    };
+//};
+//const faixas = [
+//    criarFaixa('até 999',0,999),
+//    criarFaixa('de 1000 até 1999',1000,1999),
+//    criarFaixa('acima de 2000',2000,99999),
+//];
+//console.log(faixas);

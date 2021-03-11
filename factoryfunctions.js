@@ -13,6 +13,6 @@ function criaCelular(marca,modelo,tela,android,bateria){
         bateria
     };
 };
-//e assim podemos criar um objeto celular em uma curta linha de código, armazenando numa variável:
+//e assim podemos criar um objeto novo, armazenando numa variável:
 const celular1 = criaCelular('Samsumg','A31',6.4, 10,5000);
 console.log(celular1);
